@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 public class EmojiRegexUtilTest {
 
     private void testEmoji(String emoji, String Regex) {
-        Pattern pattern = Pattern.compile(EmojiRegexUtil.getFullEmojiRegex() + "+");
+        Pattern pattern = Pattern.compile(Regex);
 
         Matcher matcher = pattern.matcher(emoji);
 
